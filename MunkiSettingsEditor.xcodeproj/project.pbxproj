@@ -13,22 +13,25 @@
 		966AD494171CA73D00F08F34 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 966AD492171CA73D00F08F34 /* Credits.rtf */; };
 		966AD497171CA73D00F08F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 966AD496171CA73D00F08F34 /* AppDelegate.m */; };
 		966AD49A171CA73D00F08F34 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966AD498171CA73D00F08F34 /* MainMenu.xib */; };
+		966AD4A2171CAD1600F08F34 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966AD4A1171CAD1600F08F34 /* AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		966AD480171CA73D00F08F34 /* Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Editor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		966AD480171CA73D00F08F34 /* MunkiSettingsEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MunkiSettingsEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966AD483171CA73D00F08F34 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		966AD486171CA73D00F08F34 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		966AD487171CA73D00F08F34 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		966AD488171CA73D00F08F34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		966AD48B171CA73D00F08F34 /* Editor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Editor-Info.plist"; sourceTree = "<group>"; };
+		966AD48B171CA73D00F08F34 /* MunkiSettingsEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MunkiSettingsEditor-Info.plist"; sourceTree = "<group>"; };
 		966AD48D171CA73D00F08F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		966AD48F171CA73D00F08F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		966AD491171CA73D00F08F34 /* Editor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Editor-Prefix.pch"; sourceTree = "<group>"; };
+		966AD491171CA73D00F08F34 /* MunkiSettingsEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MunkiSettingsEditor-Prefix.pch"; sourceTree = "<group>"; };
 		966AD493171CA73D00F08F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		966AD495171CA73D00F08F34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		966AD496171CA73D00F08F34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		966AD499171CA73D00F08F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		966AD4A0171CAD1600F08F34 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		966AD4A1171CAD1600F08F34 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +49,7 @@
 		966AD477171CA73D00F08F34 = {
 			isa = PBXGroup;
 			children = (
-				966AD489171CA73D00F08F34 /* Editor */,
+				966AD489171CA73D00F08F34 /* MunkiSettingsEditor */,
 				966AD482171CA73D00F08F34 /* Frameworks */,
 				966AD481171CA73D00F08F34 /* Products */,
 			);
@@ -55,7 +58,7 @@
 		966AD481171CA73D00F08F34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				966AD480171CA73D00F08F34 /* Editor.app */,
+				966AD480171CA73D00F08F34 /* MunkiSettingsEditor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,24 +82,26 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		966AD489171CA73D00F08F34 /* Editor */ = {
+		966AD489171CA73D00F08F34 /* MunkiSettingsEditor */ = {
 			isa = PBXGroup;
 			children = (
 				966AD495171CA73D00F08F34 /* AppDelegate.h */,
 				966AD496171CA73D00F08F34 /* AppDelegate.m */,
+				966AD4A0171CAD1600F08F34 /* AppController.h */,
+				966AD4A1171CAD1600F08F34 /* AppController.m */,
 				966AD498171CA73D00F08F34 /* MainMenu.xib */,
 				966AD48A171CA73D00F08F34 /* Supporting Files */,
 			);
-			path = Editor;
+			path = MunkiSettingsEditor;
 			sourceTree = "<group>";
 		};
 		966AD48A171CA73D00F08F34 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				966AD48B171CA73D00F08F34 /* Editor-Info.plist */,
+				966AD48B171CA73D00F08F34 /* MunkiSettingsEditor-Info.plist */,
 				966AD48C171CA73D00F08F34 /* InfoPlist.strings */,
 				966AD48F171CA73D00F08F34 /* main.m */,
-				966AD491171CA73D00F08F34 /* Editor-Prefix.pch */,
+				966AD491171CA73D00F08F34 /* MunkiSettingsEditor-Prefix.pch */,
 				966AD492171CA73D00F08F34 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -105,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		966AD47F171CA73D00F08F34 /* Editor */ = {
+		966AD47F171CA73D00F08F34 /* MunkiSettingsEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 966AD49D171CA73D00F08F34 /* Build configuration list for PBXNativeTarget "Editor" */;
+			buildConfigurationList = 966AD49D171CA73D00F08F34 /* Build configuration list for PBXNativeTarget "MunkiSettingsEditor" */;
 			buildPhases = (
 				966AD47C171CA73D00F08F34 /* Sources */,
 				966AD47D171CA73D00F08F34 /* Frameworks */,
@@ -117,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = Editor;
+			name = MunkiSettingsEditor;
 			productName = Editor;
-			productReference = 966AD480171CA73D00F08F34 /* Editor.app */;
+			productReference = 966AD480171CA73D00F08F34 /* MunkiSettingsEditor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +136,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Berreyesa Media LLC";
 			};
-			buildConfigurationList = 966AD47B171CA73D00F08F34 /* Build configuration list for PBXProject "Editor" */;
+			buildConfigurationList = 966AD47B171CA73D00F08F34 /* Build configuration list for PBXProject "MunkiSettingsEditor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -143,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				966AD47F171CA73D00F08F34 /* Editor */,
+				966AD47F171CA73D00F08F34 /* MunkiSettingsEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +173,7 @@
 			files = (
 				966AD490171CA73D00F08F34 /* main.m in Sources */,
 				966AD497171CA73D00F08F34 /* AppDelegate.m in Sources */,
+				966AD4A2171CAD1600F08F34 /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +271,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Editor/Editor-Prefix.pch";
-				INFOPLIST_FILE = "Editor/Editor-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MunkiSettingsEditor/MunkiSettingsEditor-Prefix.pch";
+				INFOPLIST_FILE = "MunkiSettingsEditor/MunkiSettingsEditor-Info.plist";
+				PRODUCT_NAME = MunkiSettingsEditor;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -277,9 +283,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Editor/Editor-Prefix.pch";
-				INFOPLIST_FILE = "Editor/Editor-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MunkiSettingsEditor/MunkiSettingsEditor-Prefix.pch";
+				INFOPLIST_FILE = "MunkiSettingsEditor/MunkiSettingsEditor-Info.plist";
+				PRODUCT_NAME = MunkiSettingsEditor;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -287,7 +293,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		966AD47B171CA73D00F08F34 /* Build configuration list for PBXProject "Editor" */ = {
+		966AD47B171CA73D00F08F34 /* Build configuration list for PBXProject "MunkiSettingsEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				966AD49B171CA73D00F08F34 /* Debug */,
@@ -296,13 +302,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		966AD49D171CA73D00F08F34 /* Build configuration list for PBXNativeTarget "Editor" */ = {
+		966AD49D171CA73D00F08F34 /* Build configuration list for PBXNativeTarget "MunkiSettingsEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				966AD49E171CA73D00F08F34 /* Debug */,
 				966AD49F171CA73D00F08F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

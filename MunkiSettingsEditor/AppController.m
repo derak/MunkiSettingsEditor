@@ -11,7 +11,7 @@
 @implementation AppController
 
 NSString *plistPath = @"/Library/Preferences/ManagedInstalls.plist";
-NSString *writablePath = @"/Users/dberreyesa/ManagedInstalls.plist";
+NSString *writablePath = @"/tmp/ManagedInstalls.plist";
 
 //@synthesize clientIdentifier;
 
@@ -178,6 +178,17 @@ NSString *writablePath = @"/Users/dberreyesa/ManagedInstalls.plist";
     NSString *clientIdentifierText = [plistData objectForKey:@"ClientIdentifier"];
     
     [currentClientIdentifier setStringValue:clientIdentifierText];
+    
+    
+    //Remove tmp file
+    /*
+    NSFileManager *filemgr;
+    filemgr = [NSFileManager defaultManager];
+    if ([filemgr removeItemAtPath:writablePath error: NULL]  == YES)
+        NSLog (@"Remove tmp successful");
+    else
+        NSLog (@"Remove tmp failed");
+     */
 
 
 
